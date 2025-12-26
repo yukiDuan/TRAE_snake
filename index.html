@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>诺基亚贪吃蛇</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="matrix-background">
+        <div class="matrix-rain" id="matrixRain"></div>
+    </div>
+    
+    <div class="game-container">
+        <h1 class="game-title">贪吃蛇</h1>
+        
+        <div class="info-panel">
+            <div class="score-board">
+                <span>分数: </span>
+                <span id="score">0</span>
+            </div>
+            <div class="speed-board">
+                <span>速度: </span>
+                <span id="speedLevel">1</span>
+            </div>
+            <div class="high-score-board">
+                <span>最佳: </span>
+                <span id="highScore">0</span>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button id="startBtn" class="control-btn">开始</button>
+            <button id="pauseBtn" class="control-btn">暂停</button>
+        </div>
+        
+        <div class="game-area">
+            <div class="game-decoration left"></div>
+            <div class="game-board" id="gameBoard"></div>
+            <div class="game-decoration right"></div>
+        </div>
+        
+        <div class="game-over" id="gameOver">
+            <h2>Game Over</h2>
+            <div class="final-score">
+                <span>最终分数: </span>
+                <span id="finalScore">0</span>
+            </div>
+            <div class="high-score-display">
+                <span>最佳成绩: </span>
+                <span id="displayHighScore">0</span>
+            </div>
+            <button id="restartBtn">重开</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
